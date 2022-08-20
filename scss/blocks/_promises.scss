@@ -1,0 +1,65 @@
+h5 {
+    font-weight: $font-weight-primary;
+    font-size: 24px;
+    line-height: 48px;
+    margin-bottom: 15px;
+
+        @include media-within ($tablet, $tablet-max) {
+            font-size: $font-size-primary;
+            line-height: $line-height-primary; 
+        }
+}
+
+.promises-block {
+    background: url(/images/promises-img.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+        @include media ($tablet) {
+            display: grid;
+            grid-template: 50% 50% / 50% 50%;
+            padding: 12px;
+            border-style: double;
+            border-color: $fill;
+            border-width: 18px;
+            text-transform: uppercase;
+            gap: 25px 15px;
+        }
+        @include media ($desktop) {
+            border-style: none;
+            background: #161926;
+            opacity: 0.9;
+            margin: 45px 0 45px -200px;
+            display: grid;
+            grid-template: auto auto / 300px 300px;
+            padding: 75px 0 75px 70px;
+            gap: 70px 100px;
+            text-align: left;
+            text-transform: none;
+    }
+}
+
+.promises {
+    display: flex;
+    
+        &-block-link {
+            border: 2px solid $color-border;
+            padding: 36px 69px;
+            margin: 10px 0;
+            text-align: center;
+            
+                @include media-within ($tablet, $tablet-max) {
+                    padding: 0;
+                    border: none;
+                    text-align: center;
+                }
+        }
+
+        &-image {
+            display: none; 
+        
+            @include media ($desktop) {
+                display: block;
+            }
+        }
+}

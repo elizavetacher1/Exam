@@ -1,0 +1,40 @@
+// /*******Fonts*****/
+$font-family-primary: 'Lato', sans-serif;
+$font-family-secondary: 'Playfair Display', serif;
+
+$line-height-primary: 20px;
+$line-height-secondary: 24px;
+
+$font-weight-primary: 400;
+$font-weight-secondary: 300;
+
+$font-size-primary: 16px;
+$font-size-secondary: 20px;
+
+$letter-spacing-primary: 0.08em;
+$letter-spacing-secondary: 0.04em;
+
+/*******width*******/
+$desktop: 1440px;
+$tablet: 768px;
+$tablet-max: $desktop - 1;
+$mob: 320px;
+$mob-max: $tablet - 1;
+
+/*******spacing*******/
+$margin-center: 0 auto;
+$gap: 30px;
+$padding-desktop: 0 135px;
+$padding-tablet: 0 70px;
+$padding-mob: 0 15px;
+
+// /*******width*******/
+$max-width: 1440px;
+// $min-width: 320px;
+
+/*******color*******/
+$color-primary: #FFFFFF;
+$color-secondary: #689FF2;
+$color-border: #515773;
+$fill: #53F3CD;
+

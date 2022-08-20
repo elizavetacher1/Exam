@@ -1,0 +1,45 @@
+.quote {
+    padding: 45px 15px 60px 50px;
+    background: url(../images/quote-bg.png);
+    font-family: $font-family-secondary;
+    font-style: italic;
+    font-weight: $font-weight-primary;
+    letter-spacing: $letter-spacing-primary;
+    text-align: right;
+        @include media ($desktop) {
+            font-size: $font-size-secondary;
+            line-height: $line-height-primary;
+            padding: 100px 319px 160px 160px;
+            text-align: left;
+            height: 400px;
+        }
+}
+
+.quote {
+    h3 {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: $font-weight-primary;
+    position: relative;
+        &::before {
+            content: url(../images/quote.png);
+            position: absolute;
+            top: -33px;
+            left: -50px;
+        }
+    }
+    
+    :hover:before {
+        content: url(../images/vector5.svg);
+        position: absolute;
+        top: -33px;
+        left: -50px;
+    } 
+    
+    @include media ($desktop) {
+        line-height: 46px;
+        font-size: 32px;
+        letter-spacing: $letter-spacing-secondary;
+        margin-bottom: 40px;
+    }
+}

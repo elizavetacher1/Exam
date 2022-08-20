@@ -1,0 +1,53 @@
+.container {
+    padding: $padding-mob;
+    margin: 0 auto;
+    max-width: $mob;
+        @include media ($tablet) {
+          padding: $padding-tablet; 
+          max-width: $tablet;
+    }
+        @include media ($desktop) {
+          padding: $padding-desktop;
+          max-width: $desktop;
+          
+    }
+
+} 
+
+body {
+    max-width: $max-width;
+    margin: $margin-center;
+    background-color: #091221;
+    color: $color-primary;
+    font-family: $font-family-primary;
+    font-size: $font-size-primary;
+    font-weight: $font-weight-primary;
+    line-height: $line-height-primary;
+    width: 100%;
+    min-width: 320px;
+}
+
+small {
+  content: "clearinghouse ";
+  font-family: $font-family-secondary;
+  color: $color-secondary;
+  font-style: italic;
+}
+
+section {
+  margin-top: 30px;
+    @include media ($desktop) {
+      margin-top: 120px;
+    }
+}
+
+span {
+  font-size: 18px;
+  font-weight: $font-weight-secondary;
+  line-height: 26px;
+  opacity: 80%;
+  letter-spacing: 0.03em;
+  display: block;
+}
+
+

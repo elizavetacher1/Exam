@@ -1,0 +1,50 @@
+.contacts {
+    padding: 30px 0 50px 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+        @include media ($desktop) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            padding: 81px 0 100px 0;
+        }
+}
+
+.form {
+    margin-top: 40px;
+    width: 50%;
+        @include media ($tablet) {
+            margin-top: 20px;
+            width: 100%;
+        }
+        @include media ($desktop) {
+            margin-top: 0;
+            width: 50%;
+        }
+}
+
+input {
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    border-bottom: 1px solid $color-border;
+    border-color: rgb(81, 87, 115, 0.1);
+    color: $color-primary;
+    box-shadow: none;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-family: $font-family-secondary;
+    font-size: 18px;
+    line-height: $line-height-primary;
+    color: $color-primary;
+    opacity: 0.5;
+}
+
+input:invalid {
+    box-shadow: 0px 0px 4px 1px red;
+}

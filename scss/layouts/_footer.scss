@@ -1,0 +1,29 @@
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column; 
+    text-align: center;
+    line-height: 26px;
+        @include media ($desktop) {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0; 
+        }
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__copyright {
+        justify-content: center;
+        display: flex;
+        gap: 12px;
+    }
+    &__conditions {
+        justify-content: center;
+        display: flex;
+        gap: 25px;
+    }
+}
+

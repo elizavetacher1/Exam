@@ -1,0 +1,49 @@
+.video-wrapper {
+    @include media ($desktop) {
+        border: 1px solid $color-border;
+        border-radius: 25px;
+        padding: 31px 70px 31px 30px;
+        position: relative;
+            &::before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 25px;
+                position: absolute;
+                bottom: 50%;
+                left: 5px;
+                border: 1px solid $color-border; }
+            &::after {
+                content: "";
+                width: 35px;
+                height: 35px;
+                border-radius: 25px;
+                position: absolute;
+                bottom: 50%;
+                right: 12px;
+                border: 1px solid $color-border;
+            }
+    }
+}
+
+[poster] {
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-primary;
+    margin-bottom: 20px;
+    margin-top: 50px;
+        @include media ($desktop) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+}
+
+.video {
+    @include media ($desktop) {
+        padding: 0 100px;
+    }
+}
