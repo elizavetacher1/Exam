@@ -498,6 +498,11 @@ h2 {
     height: 400px;
   }
 }
+.quote-info {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 20px;
+}
 
 .quote h3 {
   font-family: "Lato", sans-serif;
