@@ -16,6 +16,7 @@
 }
 
 .quote {
+    
     h3 {
     font-family: $font-family-primary;
     font-style: normal;
@@ -29,13 +30,13 @@
         }
     }
     
-    :hover:before {
-        content: url(../images/vector5.svg);
+    &:hover h3:before {
+        content: url(../images/quote2.svg);
         position: absolute;
         top: -33px;
         left: -50px;
     } 
-    
+
     @include media ($desktop) {
         line-height: 46px;
         font-size: 32px;
@@ -43,3 +44,5 @@
         margin-bottom: 40px;
     }
 }
+
+

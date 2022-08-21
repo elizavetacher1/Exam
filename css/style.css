@@ -119,6 +119,7 @@ span {
 .background-image {
   background: url(../images/banner-bg.png) no-repeat;
   padding-top: 30px;
+  height: 722px;
 }
 @media screen and (min-width: 1440px) {
   .background-image {
@@ -270,6 +271,9 @@ footer {
   gap: 25px;
 }
 
+.info {
+  margin-top: -346px;
+}
 .info-block-item {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -297,7 +301,7 @@ footer {
 .info-block-list {
   text-align: center;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 1px) and (max-width: 767px) {
   .info-block-list {
     background: url(../images/builds.png);
   }
@@ -507,8 +511,8 @@ h2 {
   top: -33px;
   left: -50px;
 }
-.quote :hover:before {
-  content: url(../images/vector5.svg);
+.quote:hover h3:before {
+  content: url(../images/quote2.svg);
   position: absolute;
   top: -33px;
   left: -50px;
@@ -601,7 +605,7 @@ h5 {
     padding: 12px;
     border-style: double;
     border-color: #53F3CD;
-    border-width: 18px;
+    border-width: 11px;
     text-transform: uppercase;
     gap: 25px 15px;
   }
@@ -695,7 +699,7 @@ h5 {
   }
 }
 .review-block-item:nth-child(2) {
-  background: url(/images/reviews-bg-burge.png) center/cover no-repeat;
+  background: url(../images/reviews-bg-burge.png) center/cover no-repeat;
   padding: 30px;
 }
 @media screen and (min-width: 1440px) {
@@ -705,7 +709,7 @@ h5 {
   }
 }
 .review-block-item:nth-child(3) {
-  background: url(/images/reviews-bg-prosse.png) center/cover no-repeat;
+  background: url(../images/reviews-bg-prosse.png) center/cover no-repeat;
   padding: 30px;
 }
 @media screen and (min-width: 1440px) {
@@ -715,7 +719,7 @@ h5 {
   }
 }
 .review-block-item:nth-child(4) {
-  background: url(/images/reviews-bg-mooney.png) center/cover no-repeat;
+  background: url(../images/reviews-bg-mooney.png) center/cover no-repeat;
   padding: 30px;
 }
 @media screen and (min-width: 1440px) {

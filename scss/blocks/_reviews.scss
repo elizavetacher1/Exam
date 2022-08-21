@@ -42,7 +42,7 @@
             }   
         }
         &:nth-child(2) {
-            background: url(/images/reviews-bg-burge.png) center / cover no-repeat;
+            background: url(../images/reviews-bg-burge.png) center / cover no-repeat;
             padding: 30px;
                 @include media ($desktop) {
                     grid-row: 2;
@@ -50,7 +50,7 @@
             }
         }
         &:nth-child(3) {
-            background: url(/images/reviews-bg-prosse.png) center / cover no-repeat;
+            background: url(../images/reviews-bg-prosse.png) center / cover no-repeat;
             padding: 30px;
                 @include media ($desktop) {
                     grid-row: 2;
@@ -58,7 +58,7 @@
                 }
         }
         &:nth-child(4) {
-            background: url(/images/reviews-bg-mooney.png) center / cover no-repeat;
+            background: url(../images/reviews-bg-mooney.png) center / cover no-repeat;
             padding: 30px;
                 @include media ($desktop) {
                     grid-row: 2;

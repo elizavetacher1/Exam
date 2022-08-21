@@ -1,6 +1,7 @@
 .background-image {
     background: url(../images/banner-bg.png) no-repeat;
     padding-top: 30px;
+    height: 722px;
         @include media ($desktop) {
             height: 1028.25px;
             width: 100%;

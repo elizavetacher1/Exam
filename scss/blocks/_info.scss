@@ -1,52 +1,54 @@
 .info {
-        &-block-item {
-            font-family: $font-family-secondary;
-            font-weight: $font-weight-primary;
-            font-size: 68px;
-            line-height: 72px;
-            position: relative;
+    margin-top: -346px;
+
+    &-block-item {
+        font-family: $font-family-secondary;
+        font-weight: $font-weight-primary;
+        font-size: 68px;
+        line-height: 72px;
+        position: relative;
+    
+            &:nth-child(-n+3)::before {
+                content: "$";
+                font-size: 40px;
+                line-height: 50px;
+                align-items: center;
+            }  
         
-                &:nth-child(-n+3)::before {
-                    content: "$";
-                    font-size: 40px;
-                    line-height: 50px;
-                    align-items: center;
-                }  
-            
-                &:nth-child(-n+3)::after {
-                    @include media ($desktop) {
-                        content: "";
-                        height: 2px;
-                        background: #689FF2;
-                        position: absolute;
-                        top: 150px;
-                        left: 136px;
-                        width: 100px;
-                    }
-                }  
+            &:nth-child(-n+3)::after {
+                @include media ($desktop) {
+                    content: "";
+                    height: 2px;
+                    background: #689FF2;
+                    position: absolute;
+                    top: 150px;
+                    left: 136px;
+                    width: 100px;
+                }
+            }  
+    }
+    &-block-list {
+        text-align: center;
+
+        @include media-within (1px, $mob-max) {
+            background: url(../images/builds.png) ;
         }
-        &-block-list {
+
+        @include media ($tablet) {
+            margin-right: 112px;
+            text-align: left;
+        }
+
+        @include media ($desktop) {
+            width: 370px;
+            background: none;
+            margin-right: 0;
             text-align: center;
-
-            @include media-within ($mob, $mob-max) {
-                background: url(../images/builds.png) ;
-            }
-
-            @include media ($tablet) {
-                margin-right: 112px;
-                text-align: left;
-            }
-
-            @include media ($desktop) {
-                width: 370px;
-                background: none;
-                margin-right: 0;
-                text-align: center;
-            }
-            :hover {
-                color: $fill;
-            }
         }
+        :hover {
+            color: $fill;
+        }
+    }
         &-span {
             @include media ($desktop) {
             margin-bottom: 80px;
